@@ -6,18 +6,18 @@ The purpose of this project is to use deep learning neural netowrk to create a b
 
 ## Results
 
-- **Data Preprocessing**
-For the initial model, data preprocessing included removing variables that were irrelevent for the model such as the identifier, grouping/binning variables that had skewed distribution.
-**Target:** The "IS SUCCESSFUL" column is considered the target for this model
-**Features:** APPLICATION_TYPE,AFFILIATION,CLASSIFICATION,USE_CASE,ORGANIZATION,STATUS,INCOME_AMT,SPECIAL_CONSIDERATIONS,ASK_AMT columns are considered as features for the model
+- **Data Preprocessing**  
+For the initial model, data preprocessing included removing variables that were irrelevent for the model such as the identifier, grouping/binning variables that had skewed distribution.  
+**Target:** The "IS SUCCESSFUL" column is considered the target for this model  
+**Features:** APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT columns are considered as features for the model  
 **Neither Targets nor Features:** EIN and NAME columns are considered neither targets nor features, and are removed from the input data
-- **Compiling, Training, and Evaluating the Model**
-**Layers:** There are 2 hidden layers, one input layer and an output layer for the intial model
-**Neurons:** There are 80 neurons in the first hidden layer and 30 neurons in the second hidden layer
-**Activation Functions:** The hidden layers use "RELU" activation function and the output layer uses "Sigmoid" activation function
-- **Optimizing**
-**Data Preprocessing:** The "INCOME_AMT" column has a lot of zero's. This column was dropped from the dataset. In the "ASK_AMT" column, most of the values were $5000. The data in this column were grouped into standarad (=5000) and high (>5000) values. The original column was then dropped from the dataset.
-**Model:** Initially, the number of neurons and the hidden layers were increased in the model, ti increase the accuracy. However this caused the model to overfit and resulted in lower accuracy. The hidden layer was then reduced to 1 and the neurons were reduced. This increased the model accuracy to 71.4%
+- **Compiling, Training, and Evaluating the Model**  
+**Layers:** There are 2 hidden layers, one input layer and an output layer for the intial model  
+**Neurons:** There are 80 neurons in the first hidden layer and 30 neurons in the second hidden layer  
+**Activation Functions:** The hidden layers use "RELU" activation function and the output layer uses "Sigmoid" activation function  
+- **Optimizing**  
+**Data Preprocessing:** The "INCOME_AMT" column has a lot of zero's. This column was dropped from the dataset. In the "ASK_AMT" column, most of the values were $5000. The data in this column were grouped into standarad (=5000) and high (>5000) values. The original column was then dropped from the dataset.  
+**Model:** Initially, the number of neurons and the hidden layers were increased in the model, ti increase the accuracy. However this caused the model to overfit and resulted in lower accuracy. The hidden layer was then reduced to 1 and the neurons were reduced. This increased the model accuracy to 71.4%  
 
 ## Summary
 
